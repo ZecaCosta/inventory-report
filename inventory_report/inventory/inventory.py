@@ -2,6 +2,8 @@ from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
 import csv
 import json
+# https://linuxhint.com/python_xml_to_dictionary/
+import xmltodict
 
 
 class Inventory:
@@ -11,8 +13,8 @@ class Inventory:
             product_list = cls.read_csv_file(filepath)
         elif(filepath.endswith('.json')):
             product_list = cls.read_json_file(filepath)
-        # elif(filepath.endswith('.xml')):
-            # product_list = cls.read_xml_file(filepath)
+        elif(filepath.endswith('.xml')):
+            product_list = cls.read_xml_file(filepath)
         return cls.select_report_type(product_list, report_type)
 
     @classmethod
@@ -36,5 +38,9 @@ class Inventory:
                 product_list.append(rows)
         return product_list
 
-    # @classmethod
-    # def read_xml_file(cls, filepath):
+    @classmethod
+    def read_xml_file(cls, filepath):
+        with open(filepath, 'r') as file:
+            data = xmltodict.parse(file.read())
+            formatted_data = data["dataset"]["record"]
+            return [dict(company) for company in formatted_data]
