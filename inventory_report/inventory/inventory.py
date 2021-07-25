@@ -2,7 +2,7 @@ from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
 import csv
 import json
-# https://linuxhint.com/python_xml_to_dictionary/
+#  https://linuxhint.com/python_xml_to_dictionary/
 import xmltodict
 
 
