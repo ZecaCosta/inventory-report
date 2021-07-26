@@ -2,16 +2,17 @@
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto de Relatório de Estoque!
+# Seja bem-vindos ao repositório do projeto de Relatório de Estoque!
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+Esse projeto faz parte do módulo de ciência da computação do curso de desenvolvimento web full stack da Trybe, bloco que trata de POO (programação orientada a objeto).
+
+Este projeto foi realizado juntamente com o colega Felipe Alcântara Vieira.
 
 ---
 
 ## SUMÁRIO
 
 - [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
 - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
 - [Desenvolvimento e testes](#desenvolvimento-e-testes)
 - [Dados](#dados)
